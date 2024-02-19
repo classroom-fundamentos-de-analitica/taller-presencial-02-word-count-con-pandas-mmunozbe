@@ -38,7 +38,7 @@ def count_words(dataframe):
     dataframe = dataframe.explode('text').reset_index(drop=True)
     dataframe = dataframe.rename(columns = {'text':'word'})
     dataframe['value'] = 1
-    conteo = dataframe.groupby(['word'], as_index=False).agg({'value':sum})
+    conteo = dataframe.groupby(['word'], as_index=False).agg({'value':'sum'})
     return conteo
     
 
