@@ -48,7 +48,7 @@ def save_output(dataframe, output_filename):
     #
     # Guarde el conteo de palabras en el archivo output_filename.
     #
-    dataframe.to_csv(output_filename, index=False, sep=";", header=False)
+    dataframe.to_csv(output_filename, index=False, sep="\t", header=False)
 
 
 #
